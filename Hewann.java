@@ -410,24 +410,16 @@ public class Hewann {
 
             @Override
             public int compare(Animal h1, Animal h2) {
-                return h1.getName()
-                        .compareToIgnoreCase(h2.getName());
+            return h1.getName().compareToIgnoreCase(h2.getName());
             }
         });
 
         System.out.println();
-
         int no = 1;
-
         for (Animal h : listofhewan) {
 
             System.out.println(
-                    no + ". "
-                    + h.getName()
-                    + " (" + h.getjenishewan()
-                    + ", " + h.getAge() + " tahun)"
-            );
-
+            no + ". "+ h.getName()+ " (" + h.getjenishewan()+ ", " + h.getAge() + " tahun)");
             no++;
         }
 
@@ -435,27 +427,15 @@ public class Hewann {
 
             @Override
             public int compare(Animal h1, Animal h2) {
-                return Integer.compare(
-                        h1.getAge(),
-                        h2.getAge()
-                );
+                return Integer.compare(h1.getAge(),h2.getAge());
             }
         });
 
         System.out.println();
-
         no = 1;
-
         for (Animal h : listofhewan) {
-
-            System.out.println(
-                    no + ". "
-                    + h.getName()
-                    + " - "
-                    + h.getAge()
-                    + " tahun"
+            System.out.println(no + ". "+ h.getName()+ " - "+ h.getAge()+ " tahun"
             );
-
             no++;
         }
     }
